@@ -1,0 +1,149 @@
+/* color swatch as follows
+Deep blue #097392 action items
+light sea green/blue #83b4b3
+egg shell yellowish white, background and light font color #fff0ce
+burnt orange red (no use case yet, might drop) $d55534
+dark gray black font and div backgrounds (nav for example) #383838*/
+
+body {
+  background-color: #fff0ce;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+	overflow: hidden;
+  height: 15vh;
+  }
+
+  #navName {
+    float: left;
+    font-size: 17px;
+    margin-left: 2%
+  }
+
+  #navButtons {
+    margin-right: 2%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: right;
+	color: #383838;
+	text-align: center;
+	padding: 9px 7px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 15%;
+  margin-left: 1%;
+	
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: #fff0ce;
+	color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: #83b4b3;
+	color: #383838;
+  }
+
+  body {
+	  background-color: rgba(255, 240, 206, .25);
+    font-family: sans-serif;
+  }
+
+  #intro_banner {
+	  color: #383838;
+	  font-family: sans-serif;
+	  position: relative;
+	  top: 115px;
+	  margin-left: 5%;
+	  max-width: fit-content;
+	  height: 85vh;
+
+  }
+  
+  #name_header {
+	  font-size: 18px;
+  }
+
+  .blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #383838;    }
+    49%{    color: #383838; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+
+  #name_hero {
+	  font-size: 40px;
+	  position: relative;
+	  top: -20px;
+  }
+
+  #name_footer {
+	  font-size: 18px;
+	  position: relative;
+	  top: -45px;
+	}
+
+  .vl {
+    border-left: 3px solid #d55534;
+    height: 50vh;
+  }
+
+
+  /* about */
+  #about {
+    margin-left: 5%;
+    color: #383838;
+    min-height: 100vh;
+  }
+  #passions {
+    min-height: 100px;
+    padding-top: 20px;
+  }
+
+  #blinkingpassions::before{
+    content: "    ";
+    color: transparent;
+    animation:blinkingitem1 7.2s infinite;
+  }
+  @keyframes blinkingitem1{
+    0%{     color: transparent;           }
+    4%{     content: " enviornmental data"; color: #83b486;}
+    21%{    content: " enviornmental data"; color: #83b486;}
+    25%{    color: transparent;           }
+    29%{    content: " video games & entertaining"; color: #b55858;}
+    46%{    content: " video games & entertaining"; color: #b55858;}
+    50%{    color: transparent;           }
+    54%{    content: " automation"; color: #83b4b3;}
+    71%{    content: " automation"; color: #83b4b3;}
+    75%{    color: transparent;           }
+    79%{    content: " the trades"; color: #d7a52f;}
+    96%{    content: " the trades"; color: #d7a52f;}
+    100%{    color: transparent;            }
+
+  }
+  
+
+  /* projects */
+  #projects {
+    background-color: #83b4b3;
+    min-height: 100vh
+  }
+
+/* contact */
+  #aboutme {
+    height: 100vh;
+    color: #383838;
+  } 
