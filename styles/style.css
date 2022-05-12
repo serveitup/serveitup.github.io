@@ -7,6 +7,7 @@ dark gray black font and div backgrounds (nav for example) #383838*/
 
 body {
   background-color: #fff0ce;
+  overflow-x: hidden !important;
 }
 
 
@@ -50,6 +51,18 @@ body {
   .topnav a.active {
 	background-color: #83b4b3;
 	color: #383838;
+  }
+
+  #flavorShape {
+    position: absolute;
+    transform: rotate(-45deg);
+    background-color: rgba(180, 193, 201, 0.25);
+    top: 29.5%;
+    left: -15%;
+    width: 1000px;
+    height: 150px;
+    overflow: hidden;
+    direction: ltr;
   }
 
   body {
