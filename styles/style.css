@@ -7,7 +7,7 @@ dark gray black font and div backgrounds (nav for example) #383838*/
 
 body {
   background-color: #fff0ce;
-  overflow-x: hidden !important;
+  overflow-x: clip !important;
 }
 
 
@@ -61,7 +61,7 @@ body {
     left: -15%;
     width: 1000px;
     height: 150px;
-    overflow: hidden;
+    overflow: clip;
     direction: ltr;
   }
 
@@ -112,6 +112,8 @@ body {
   .vl {
     border-left: 3px solid #d55534;
     height: 50vh;
+    left: 1px;
+    position: absolute;
   }
 
 
@@ -129,21 +131,64 @@ body {
   #blinkingpassions::before{
     content: "    ";
     color: transparent;
-    animation:blinkingitem1 7.2s infinite;
+    animation:blinkingitem1 10s infinite;
   }
   @keyframes blinkingitem1{
     0%{     color: transparent;           }
-    4%{     content: " enviornmental data"; color: #83b486;}
-    21%{    content: " enviornmental data"; color: #83b486;}
+    3.75%{   color: transparent           }
+    4%{     content: " e"; color: #83b486;}
+    4.25%{     content: " en"; color: #83b486;}
+    4.5%{     content: " env"; color: #83b486;}
+    4.75%{     content: " envi"; color: #83b486;}
+    5%{     content: " envio"; color: #83b486;}
+    5.25%{     content: " envior"; color: #83b486;}
+    5.5%{     content: " enviorn"; color: #83b486;}
+    5.75%{     content: " enviornm"; color: #83b486;}
+    6%{     content: " enviornme"; color: #83b486;}
+    6.25%{     content: " enviornmen"; color: #83b486;}
+    6.5%{     content: " enviornment"; color: #83b486;}
+    6.75%{     content: " enviornmenta"; color: #83b486;}
+    7%{     content: " enviornmental"; color: #83b486;}
+    7.25%{     content: " enviornmental d"; color: #83b486;}
+    7.5%{     content: " enviornmental da"; color: #83b486;}
+    7.75%{     content: " enviornmental dat"; color: #83b486;}
+    8%{     content: " enviornmental data"; color: #83b486;}
+    20.75%{    content: " enviornmental data"; color: #83b486;}
+    21%{     content: " enviornmental dat"; color: #83b486;}
+    21.25%{     content: " enviornmental da"; color: #83b486;}
+    21.5%{     content: " enviornmental d"; color: #83b486;}
+    21.75%{     content: " enviornmental"; color: #83b486;}
+    22%{     content: " enviornmenta"; color: #83b486;}
+    22.25%{     content: " enviornment"; color: #83b486;}
+    22.5%{     content: " enviornmen"; color: #83b486;}
+    22.75%{     content: " enviornme"; color: #83b486;}
+    23%{     content: " enviornm"; color: #83b486;}
+    23.25%{     content: " enviorn"; color: #83b486;}
+    23.5%{     content: " envior"; color: #83b486;}
+    23.75%{     content: " envio"; color: #83b486;}
+    24%{     content: " envi"; color: #83b486;}
+    24.25%{     content: " env"; color: #83b486;}
+    24.5%{     content: " en"; color: #83b486;}
+    24.75%{     content: " e"; color: #83b486;}
     25%{    color: transparent;           }
-    29%{    content: " video games & entertaining"; color: #b55858;}
-    46%{    content: " video games & entertaining"; color: #b55858;}
+    28.75%{    color: transparent;           }
+    29%{    content: " v"; color: #b55858;}
+    29.25%{    content: " vi"; color: #b55858;}
+    29.5%{    content: " vid"; color: #b55858;}
+    29.75%{    content: " vide"; color: #b55858;}
+    30%{    content: " video"; color: #b55858;}
+    30.25%{    content: " video g"; color: #b55858;}
+    30.5%{    content: " video ga"; color: #b55858;}
+    30.75%{    content: " video gam"; color: #b55858;}
+    31%{    content: " video game"; color: #b55858;}
+    31.25%{    content: " video games"; color: #b55858;}
+    46%{    content: " video games"; color: #b55858;}
     50%{    color: transparent;           }
     54%{    content: " automation"; color: #83b4b3;}
     71%{    content: " automation"; color: #83b4b3;}
     75%{    color: transparent;           }
-    79%{    content: " the trades"; color: #d7a52f;}
-    96%{    content: " the trades"; color: #d7a52f;}
+    79%{    content: " policy"; color: #d7a52f;}
+    96%{    content: " policy"; color: #d7a52f;}
     100%{    color: transparent;            }
 
   }
